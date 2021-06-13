@@ -1,0 +1,14 @@
+.help-icon{
+  font-size: 40px;
+  color: white;
+}
+.list-icon{
+  font-size: 25px;
+  color: white;
+}
+.help-btn{
+  border-radius: 50%;
+}
+.ant-modal-confirm-content: {
+  margin-left: 0
+}
