@@ -8,7 +8,7 @@ import './customCss/header.css';
 
 const Header = ({ siteTitle }) => {
     function info() {
-        let data = ['Random numbers( 0-9 ) will be shown on the screen one at a time.',
+        let data = ['Random numbers(1-4) will be shown on the screen one at a time.',
                     'Memorise the sequence of the number generated from the beginning of the game.',
                     'Click the numbers in the sequence right from the first number.'
                 ]
@@ -39,18 +39,16 @@ const Header = ({ siteTitle }) => {
         <>
             <header
             style={{
-                background: `#20e6b7`,
                 marginBottom: `1.45rem`,
             }}>
                 <div
                     style={{
                         margin: `0 auto`,
-                        maxWidth: 960,
                         padding: `1.45rem 1.0875rem`,
                         display: 'flex',
-                        justifyContent: 'space-between'
+                        justifyContent: 'center'
                     }}>
-                    <h1 style={{ margin: 0 }}>
+                    <h1 className="heading-name">
                         <Link
                         to="/"
                         style={{
@@ -62,9 +60,9 @@ const Header = ({ siteTitle }) => {
                         </Link>
                     </h1>
 
-                    <QuestionCircleOutlined className="help-icon" onClick={info}/>
                 </div>
             </header>
+            <div className="help"><QuestionCircleOutlined className="help-icon" onClick={info}/></div>
       </>
     )
 };

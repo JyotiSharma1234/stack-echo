@@ -1,5 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+.header{
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-content: center;
+}
+.heading-name{
+  /* font-family: 'Lobster'; */
+  margin: 0;
+  font-family: 'Pacifico';
+  font-size: 48px;
+}
+.help{
+  display: flex;
+  justify-content: flex-end;
+}
 .help-icon{
-  font-size: 40px;
+  padding: 10px;
+  font-size: 30px;
   color: white;
 }
 .list-icon{

@@ -1,0 +1,68 @@
+.play-reset-btn{
+  font-size: 50px;
+  padding: 16px;
+}
+.number-btn{
+  background-color: rgb(32, 230, 183);
+  margin: 10px;
+}
+.card-container{
+  display: flex;
+  /* flex-direction: column; */
+  flex: 0.4;
+  align-items: baseline;
+  flex-wrap: wrap;
+  height: fit-content;
+  
+}
+.card{
+  width: 150px;
+  height: 150px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 10px;
+  /* box-shadow: 120px 80px 40px 20px #0ff; */
+    /* width: 400px;
+    height: 200px; */
+    /* background-color: #fff; */
+    border: solid 6px #fff;
+}
+.card-glow{
+
+}
+.tomato{
+  background-color: tomato;
+}
+.blueviolet{
+  background-color: blueviolet;
+}
+.darkorange{
+  background-color: darkorange;
+}
+.darkgreen{
+  background-color: darkgreen;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.number{
+  margin-bottom: 20;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgb(32, 230, 183);
+  border: 10px solid blue;
+  text-align: center;
+  font-size: 32;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

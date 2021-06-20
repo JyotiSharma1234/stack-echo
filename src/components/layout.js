@@ -36,16 +36,15 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
-            width: '100%',
-            backgroundColor: '#20e6b7',
+            width: '70%',
             position: 'fixed',
             bottom: 5,
             display: 'flex',
             justifyContent: 'center',
           }}
         >
-          © 2021, Built by Jyoti Sharma, with
-          {` `}
+          © 2021, Built with  ❤️ by Jyoti Sharma, with
+          {`  `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>

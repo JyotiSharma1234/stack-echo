@@ -8,7 +8,7 @@ import MainPage from "../components/MainPage"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Stack-Echo" />
     <MainPage/>
     {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
