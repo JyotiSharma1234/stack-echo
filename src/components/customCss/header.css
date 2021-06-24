@@ -13,6 +13,10 @@
   font-family: 'Pacifico';
   font-size: 48px;
 }
+.help-container{
+  display: flex;
+  justify-content: flex-end;
+}
 .help{
   display: flex;
   justify-content: flex-end;
@@ -31,4 +35,11 @@
 }
 .ant-modal-confirm-content {
   margin-left: 0
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
 }

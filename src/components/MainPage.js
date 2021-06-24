@@ -3,7 +3,7 @@ import { RedoOutlined, PlayCircleOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import './customCss/main_page.css';
 import NewNumberAudio from '../audio/glowaudio.wav'
-import { Card   } from 'antd';
+import { Card, Tag } from 'antd';
 
 const MainPage = (props) => {
     const [audioClick] = React.useState(typeof Audio != "undefined" && new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/tick.mp3"));
@@ -78,16 +78,16 @@ const MainPage = (props) => {
           }}>
             <div className="card-container">
                 <Card data-number="1" disabled={isGameOver} className="card tomato" onClick={(event)=>handleNumberClick(1)}>
-                    <h1>1</h1>
+                    1
                 </Card>
                 <Card data-number="2" disabled={isGameOver} className="card blueviolet" onClick={(event)=>handleNumberClick(2)}>
-                    <h1>2</h1>
+                    2
                 </Card>
                 <Card data-number="3" disabled={isGameOver} className="card darkorange" onClick={(event)=>handleNumberClick(3)}>
-                    <h1>3</h1>
+                    3
                 </Card>
                 <Card data-number="4" disabled={isGameOver} className="card darkgreen" onClick={(event)=>handleNumberClick(4)}>
-                    <h1>4</h1>
+                    4
                 </Card>
             </div>
             
@@ -97,7 +97,16 @@ const MainPage = (props) => {
                 <h3>High Score: {highScore}</h3>
                 {isGameOver && <h3>Correct sequesnce: {generatedNumbers}</h3>}
                 {nextNumber && <h3 className="number">{nextNumber}</h3>}
-                <h3>Stack: {clickedNumbers} </h3>
+                <h3>Your Stack: </h3>
+                <div className='tag-container'>
+                    {clickedNumbers.map(function(num) {
+                        return (
+                            <Tag className="tag" color="#cd201f">
+                                {num}
+                            </Tag>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

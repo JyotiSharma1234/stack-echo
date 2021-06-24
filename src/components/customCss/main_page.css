@@ -8,16 +8,16 @@
 }
 .card-container{
   display: flex;
-  /* flex-direction: column; */
+  justify-content: center;
   flex: 0.4;
   align-items: baseline;
   flex-wrap: wrap;
   height: fit-content;
-  
 }
 .card{
   width: 150px;
   height: 150px;
+  font-size: 44px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   text-align: center;
   color: #fff;
@@ -32,8 +32,16 @@
     /* background-color: #fff; */
     border: solid 6px #fff;
 }
-.card-glow{
-
+.tag-container{
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+.tag{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  font-size: medium;
 }
 .tomato{
   background-color: tomato;
@@ -65,4 +73,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  .card-container{
+    margin: 0px;
+  }
 }
